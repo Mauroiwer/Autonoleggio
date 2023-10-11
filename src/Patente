@@ -1,0 +1,62 @@
+public class Patente  extends Cliente{
+    
+    private char patente;
+    
+    
+        //metodo costruttore
+    public Patente(String nome, String cognome, int eta, char patente){
+        super(nome, cognome, eta);
+        this.patente=patente;
+
+   
+        
+    }
+    
+    public Patente(){
+        super();
+        this.patente=0;
+
+  
+
+    }
+    
+    public Patente(Patente that){
+        super(that);
+        this.patente=that.patente;
+
+
+
+    }
+    
+    
+    //metodi get  
+    public char getPatente(){
+        return this.patente;
+    }
+
+
+    
+    //metodi set   
+    
+    public void setPatente(char patente){
+        this.patente=patente;
+    }
+
+      
+      
+        
+        public String toString(){
+        return super.toString()+ " Patente "+this.patente;
+    }
+    
+    
+    public boolean equals(Patente that){
+       boolean r=false;
+       if(this.patente==that.patente && super.equals(that)){
+           r=true;
+       }
+       return r;
+    }
+
+    
+}
