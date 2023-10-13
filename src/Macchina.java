@@ -4,13 +4,13 @@ public class Macchina {
     private String marca;
     private String modello;
     private int codice;
-    private int targa;
+    private String targa;
     private int numeroposti;
 
 
     
     //metodo costruttore
-    public Macchina(String marca, String modello,int codice,int targa,int numeroposti){
+    public Macchina(String marca, String modello,int codice,String targa,int numeroposti){
         this.marca=marca;
         this.modello=modello;
         this.codice=codice;
@@ -24,7 +24,7 @@ public class Macchina {
         this.marca="";
         this.modello="";
         this.codice=0;
-        this.targa=0;
+        this.targa="";
         this.numeroposti=0;
 
     }
@@ -49,7 +49,7 @@ public class Macchina {
     public int getCodice(){
         return this.codice;
     }
-    public int getTarga(){
+    public String getTarga(){
         return this.targa;
     }
     public int getNumeroposti(){
@@ -69,7 +69,7 @@ public class Macchina {
     public void setCodice(int codice){
         this.codice=codice;
     }
-    public void setTarga(int targa){
+    public void setTarga(String targa){
         this.targa=targa;
     }
     public void setNumeroposti(int numeroposti){
