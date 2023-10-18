@@ -24,7 +24,7 @@ public class Cliente {
         this.nome="";
         this.cognome="";
         this.eta=0;
-        this.patente='';
+
 
 
     }

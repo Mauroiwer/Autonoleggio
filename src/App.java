@@ -1,9 +1,9 @@
-public class Main
+public class App
 {
 	public static void main(String[] args) {
 
 		
-		Macchina mazda= new Macchina("Mazda","Miata",09648, "BF4T32C", 5);
+		Macchina mazda= new Macchina("Mazda","Miata",648, "BF4T32C", 5);
 		Cliente mauro= new Cliente("Mauro", "Depari", 17, 'B');
 		
 		
